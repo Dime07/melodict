@@ -1,0 +1,84 @@
+/* general */
+:root {
+  --primary: #f55279;
+  --neutral: #ffffff;
+  --dark: #1b1b1b;
+}
+
+* {
+  font-family: "Plus Jakarta Sans";
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+}
+
+/* button */
+.button {
+  padding: 16px 31px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.button-secondary {
+  background-color: var(--neutral);
+}
+
+.button-secondary:hover {
+  opacity: 90%;
+}
+
+/* navbar */
+nav {
+  padding: 34px 80px;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 114px;
+}
+
+nav .menu-wrapper .logo {
+  width: fit-content;
+  height: fit-content;
+}
+
+nav .menu-wrapper .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+nav .menu-wrapper .menu .menu-item {
+  list-style-type: none;
+  color: var(--neutral);
+  opacity: 72%;
+}
+
+nav .menu-wrapper .menu .active {
+  opacity: 1 !important;
+  font-weight: 700;
+}
+
+nav .search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+nav .search-wrapper .button-search {
+  border: none;
+  background-color: transparent;
+}

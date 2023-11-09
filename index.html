@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- tag that will show on window tab -->
+    <title>Melodict</title>
   </head>
-  <body></body>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="menu-wrapper">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/images/logo_name.png"
+          />
+          <img src="assets/images/logo.png" alt="Melodict" class="logo" />
+        </picture>
+
+        <ul class="menu">
+          <li class="menu-item active">Home</li>
+          <li class="menu-item">About</li>
+          <li class="menu-item">Features</li>
+          <li class="menu-item">Category</li>
+          <li class="menu-item">Testimony</li>
+        </ul>
+      </div>
+      <div class="search-wrapper">
+        <button class="button-search">
+          <img src="assets/icons/searchIcon.svg" alt="Search Icon" />
+        </button>
+        <button class="button button-secondary">Try Free</button>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>Body content</main>
+
+    <!-- footer -->
+    <footer>footer</footer>
+  </body>
 </html>
