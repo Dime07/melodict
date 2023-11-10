@@ -12,6 +12,7 @@
   /* to avoid unnecessary margin and padding on default tag */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -116,11 +117,15 @@ nav .menu-wrapper .menu {
 
 nav .menu-wrapper .menu .menu-item {
   list-style-type: none;
+}
+
+nav .menu-wrapper .menu .menu-item a {
+  text-decoration: none;
   color: var(--neutral);
   opacity: 72%;
 }
 
-nav .menu-wrapper .menu .active {
+nav .menu-wrapper .menu .active a {
   opacity: 1 !important;
   font-weight: 700;
 }
