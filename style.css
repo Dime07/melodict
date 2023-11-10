@@ -204,6 +204,9 @@ nav .search-wrapper .button-search {
   background-color: var(--bgColor);
   margin-left: -10px;
   border: 1.5px solid var(--neutral);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 #hero-section
@@ -245,6 +248,9 @@ nav .search-wrapper .button-search {
   width: 64px;
   background-color: var(--neutral);
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero-section .statistic-wrapper .users-rating-wrapper .rating-description p {
@@ -311,6 +317,9 @@ nav .search-wrapper .button-search {
   background-color: #f552791f;
   border-radius: 12px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-section .about-items-wrapper .about-item .title {
@@ -383,6 +392,9 @@ nav .search-wrapper .button-search {
   height: 371px;
   border-radius: 24px 24px 0px 0px;
   background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 #feature-section .content .feature-card h3 {
@@ -497,6 +509,9 @@ nav .search-wrapper .button-search {
   border-radius: 100%;
   border: none;
   background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* company list section */
@@ -510,6 +525,13 @@ nav .search-wrapper .button-search {
   padding: 0px 100px 64px 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+#company-list-section img {
+  flex-shrink: 0;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* cta form section */
