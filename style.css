@@ -1,6 +1,7 @@
 /* general */
 :root {
   --primary: #f55279;
+  --blue: #192252;
   --neutral: #ffffff;
   --dark: #1b1b1b;
 }
@@ -61,15 +62,36 @@ body {
   color: var(--dark);
 }
 
+/* label */
+.label {
+  padding: 8px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--primary);
+  background-color: #f552791f;
+  width: fit-content;
+  border-radius: 22px;
+}
+
 /* navbar */
 nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
   width: 100%;
-  padding: 34px 80px;
   background-color: var(--dark);
+  z-index: 2;
+}
+
+nav .content {
+  max-width: 1440px;
+  padding: 34px 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  margin: 0 auto;
 }
 
 nav .menu-wrapper {
@@ -116,6 +138,11 @@ nav .search-wrapper .button-search {
 
 #hero-section {
   background-color: var(--dark);
+}
+
+#hero-section .content {
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 151px 80px 100px 80px;
   display: flex;
   justify-content: space-between;
@@ -234,4 +261,70 @@ nav .search-wrapper .button-search {
   span {
   font-weight: 500 !important;
   opacity: 72%;
+}
+
+/* about section */
+#about-section {
+  background-color: var(--neutral);
+}
+
+#about-section .content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 80px;
+  gap: 88px;
+}
+
+#about-section .content .about-image {
+  margin-top: 28px;
+}
+
+#about-section .content h2 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-top: 16px;
+}
+
+#about-section .about-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 64px 0;
+}
+
+#about-section .about-items-wrapper .about-item {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+#about-section .about-items-wrapper .about-item .icon {
+  width: 72px;
+  height: 72px;
+  background-color: #f552791f;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+#about-section .about-items-wrapper .about-item .title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+#about-section .about-items-wrapper .about-item .subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1%;
+  font-weight: 500;
+  color: #848fac;
+  margin-top: 8px;
 }

@@ -21,28 +21,30 @@
   <body>
     <!-- navbar -->
     <nav>
-      <div class="menu-wrapper">
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="assets/images/logo_name.png"
-          />
-          <img src="assets/images/logo.png" alt="Melodict" class="logo" />
-        </picture>
+      <div class="content">
+        <div class="menu-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/logo_name.png"
+            />
+            <img src="assets/images/logo.png" alt="Melodict" class="logo" />
+          </picture>
 
-        <ul class="menu">
-          <li class="menu-item active">Home</li>
-          <li class="menu-item">About</li>
-          <li class="menu-item">Features</li>
-          <li class="menu-item">Category</li>
-          <li class="menu-item">Testimony</li>
-        </ul>
-      </div>
-      <div class="search-wrapper">
-        <button class="button-search">
-          <img src="assets/icons/searchIcon.svg" alt="Search Icon" />
-        </button>
-        <button class="button button-secondary">Try Free</button>
+          <ul class="menu">
+            <li class="menu-item active">Home</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Features</li>
+            <li class="menu-item">Category</li>
+            <li class="menu-item">Testimony</li>
+          </ul>
+        </div>
+        <div class="search-wrapper">
+          <button class="button-search">
+            <img src="assets/icons/searchIcon.svg" alt="Search Icon" />
+          </button>
+          <button class="button button-secondary">Try Free</button>
+        </div>
       </div>
     </nav>
 
@@ -50,73 +52,138 @@
     <main>
       <!-- Hero Section -->
       <section id="hero-section">
-        <!-- left side -->
-        <div>
-          <div class="headline-wrapper">
-            <h1>
-              Listen The Best Music Just on Your Held.
-              <span>
-                <img
-                  src="assets/images/square_stretch_pink.svg"
-                  alt="square strecth"
-                />
-              </span>
-            </h1>
-            <h2>
-              Welcome to simplicity era. Enjoy your favourite song, album, and
-              artist with our breakthrough only in one super app, one hand.
-            </h2>
-          </div>
-          <div class="cta-wrapper">
-            <button class="button button-primary">Download Now</button>
-            <button class="button button-outline">Top 5 songs</button>
-          </div>
-          <div class="statistic-wrapper">
-            <!-- active users wrapper -->
-            <div class="active-users-wrapper">
-              <div class="active-users">
-                <!-- user 1-->
-                <div class="active-users-profile" style="--bgColor: #f49392">
-                  <img src="" alt="" />
+        <div class="content">
+          <!-- left side -->
+          <div>
+            <div class="headline-wrapper">
+              <h1>
+                Listen The Best Music Just on Your Held.
+                <span>
+                  <img
+                    src="assets/images/square_stretch_pink.svg"
+                    alt="square strecth"
+                  />
+                </span>
+              </h1>
+              <h2>
+                Welcome to simplicity era. Enjoy your favourite song, album, and
+                artist with our breakthrough only in one super app, one hand.
+              </h2>
+            </div>
+            <div class="cta-wrapper">
+              <button class="button button-primary">Download Now</button>
+              <button class="button button-outline">Top 5 songs</button>
+            </div>
+            <div class="statistic-wrapper">
+              <!-- active users wrapper -->
+              <div class="active-users-wrapper">
+                <div class="active-users">
+                  <!-- user 1-->
+                  <div class="active-users-profile" style="--bgColor: #f49392">
+                    <img src="" alt="" />
+                  </div>
+                  <!-- user 2-->
+                  <div class="active-users-profile" style="--bgColor: #1e9896">
+                    <img src="" alt="" />
+                  </div>
+                  <!-- user 3-->
+                  <div class="active-users-profile" style="--bgColor: #f09b83">
+                    <img src="" alt="" />
+                  </div>
                 </div>
-                <!-- user 2-->
-                <div class="active-users-profile" style="--bgColor: #1e9896">
-                  <img src="" alt="" />
-                </div>
-                <!-- user 3-->
-                <div class="active-users-profile" style="--bgColor: #f09b83">
-                  <img src="" alt="" />
+                <div class="active-users-description">
+                  <p>
+                    500 K + <br />
+                    <span>active users</span>
+                  </p>
                 </div>
               </div>
-              <div class="active-users-description">
-                <p>
-                  500 K + <br />
-                  <span>active users</span>
-                </p>
+              <!-- divider -->
+              <div class="divider"></div>
+              <!-- users rating -->
+              <div class="users-rating-wrapper">
+                <div class="star-wrapper">
+                  <img src="" alt="" />
+                </div>
+                <div class="rating-description">
+                  <p>
+                    4.7 <br />
+                    <span>User Rating</span>
+                  </p>
+                </div>
               </div>
             </div>
-            <!-- divider -->
-            <div class="divider"></div>
-            <!-- users rating -->
-            <div class="users-rating-wrapper">
-              <div class="star-wrapper">
-                <img src="" alt="" />
-              </div>
-              <div class="rating-description">
-                <p>
-                  4.7 <br />
-                  <span>User Rating</span>
-                </p>
-              </div>
-            </div>
+          </div>
+          <!-- right side -->
+          <div>
+            <img
+              src="assets/images/listening_music.png"
+              alt="woman listening music"
+            />
           </div>
         </div>
-        <!-- right side -->
-        <div>
-          <img
-            src="assets/images/listening_music.png"
-            alt="woman listening music"
-          />
+      </section>
+      <!-- about section -->
+      <section id="about-section">
+        <div class="content">
+          <!-- left side -->
+          <div>
+            <img
+              class="about-image"
+              src="assets/images/about.png"
+              alt="a bunch of people listening music"
+            />
+          </div>
+          <!-- right side -->
+          <div>
+            <div class="label">About</div>
+            <h2>Why Melodict Become Number One Music App</h2>
+            <div class="about-items-wrapper">
+              <!-- about item -->
+              <div class="about-item">
+                <div class="icon">
+                  <img src="" alt="" />
+                </div>
+                <div>
+                  <p class="title">Most Collection</p>
+                  <p class="subtitle">
+                    We provide more than 100K songs from any album and any
+                    artists all over the world. So no need to worry to miss your
+                    favourite song
+                  </p>
+                </div>
+              </div>
+              <!-- about item -->
+              <div class="about-item">
+                <div class="icon">
+                  <img src="" alt="" />
+                </div>
+                <div>
+                  <p class="title">Most Wanted</p>
+                  <p class="subtitle">
+                    Most downloaded on Playstore and Appstore. More than 500K
+                    times. Also that becomes the most download record for music
+                    streaming app
+                  </p>
+                </div>
+              </div>
+              <!-- about item -->
+              <div class="about-item">
+                <div class="icon">
+                  <img src="" alt="" />
+                </div>
+                <div>
+                  <p class="title">Most Collection</p>
+                  <p class="subtitle">
+                    Enjoy our key features that will make you feel the best
+                    experience on listening music. Because user experience is
+                    our priority
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="button button-primary">Learn More</button>
+          </div>
         </div>
       </section>
     </main>
