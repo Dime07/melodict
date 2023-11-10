@@ -166,6 +166,8 @@ nav .search-wrapper .button-search {
 
 #hero-section .headline-wrapper h1 img {
   margin-left: 20px;
+  animation: pop-up infinite 2s ease-in-out;
+  transform: scale(0);
 }
 
 #hero-section .headline-wrapper h2 {
@@ -196,6 +198,7 @@ nav .search-wrapper .button-search {
   display: flex;
   gap: 24px;
   align-items: center;
+  cursor: pointer;
 }
 
 #hero-section .statistic-wrapper .active-users-wrapper .active-users {
@@ -212,6 +215,14 @@ nav .search-wrapper .button-search {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+#hero-section
+  .statistic-wrapper:hover
+  .active-users-wrapper
+  .active-users-profile {
+  margin-left: 0;
 }
 
 #hero-section
@@ -471,12 +482,18 @@ nav .search-wrapper .button-search {
   background-color: #f55279;
   border-radius: 24px;
   max-height: 532px;
+  cursor: pointer;
 }
 
 #top-song-section .song-card .song-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+#top-song-section .song-card:hover .song-cover {
+  scale: 1.1;
 }
 
 #top-song-section .song-card .blur-box {
@@ -517,6 +534,11 @@ nav .search-wrapper .button-search {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+#top-song-section .song-card .blur-box button:hover {
+  animation: rotating infinite 2s ease-in-out;
 }
 
 /* company list section */
@@ -668,4 +690,29 @@ footer .content .footer-navigation ul li {
 
 footer .content .footer-navigation ul li:first-child {
   opacity: 1 !important;
+}
+
+/* animation */
+@keyframes pop-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
